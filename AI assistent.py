@@ -88,7 +88,7 @@ def code():
 
 microphoneImg = ImageTk.PhotoImage(Image.open("Microphone.png"))
 
-img = Label(root, bg='black', fg='white', image=microphoneImg, command=code)
+img = Label(root, bg='black', fg='white', command=code)
 img.place(relx=0.5, rely=0.5, anchor=CENTER)
 
 
