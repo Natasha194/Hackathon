@@ -14,6 +14,14 @@ root.config(bg='black')
 root.geometry("1200x800")
 root.title("Hackerzzz / ANY.")
 
+microphoneImg = ImageTk.PhotoImage(Image.open("Microphone.png"))
+
+img = Label(root, bg='black', fg='white', image=microphoneImg, text="")
+img.place(relx=0.5, rely=0.5, anchor=CENTER)
+
+root.mainloop()
+
+
 
 def code():
 
@@ -86,11 +94,9 @@ def code():
 
 
 
-microphoneImg = ImageTk.PhotoImage(Image.open("Microphone.png"))
 
-img = Label(root, bg='black', fg='white', image=microphoneImg, text="", command=code)
 
-img.place(relx=0.5, rely=0.5, anchor=CENTER)
+code()
 
 
 
@@ -99,6 +105,3 @@ img.place(relx=0.5, rely=0.5, anchor=CENTER)
 
 
 
-
-
-root.mainloop()
